@@ -1,0 +1,34 @@
+// DIMENSIONS
+$page_width:       1008px;
+$page_left_margin:   12px;
+$page_right_margin:  12px;
+$page_inner_width: $page_width - $page_left_margin - $page_right_margin;
+$page_min_height: 400px;
+
+
+// FONTS
+$bullet_font: "Sans Culottes", "Impact";
+$submenu_font_family: Verdana, Times, Arial;
+$page_font: Verdana, Times, Arial;
+
+// BORDERS
+$snippet_border: 1px solid #2c3043;
+
+// COLORS
+$soft_blue:  #045787;
+$dark_blue: #075A8C;
+$dark_green: #117d00;
+$page_bg_color: white;
+$middle_body_header_color: #747474;
+$snippet_bg_color: #f2f2f2;
+$background_color: #00AA47;
+$background_color_from: #00AA47;
+$background_color_to: #A6CE37;
+$background_menu: #008235;
+$background_calendar_from: $background_color_from;
+$background_calendar_to: $background_color_to;
+$submenu_hover_bg_color: $background_color_from;
+$separator_color: #CCC;
+$h_color_a: #50060c;
+$a_color: #474646;
+$table_border_color: #808080;

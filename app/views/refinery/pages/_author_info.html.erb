@@ -1,0 +1,7 @@
+<div id="author_info" >
+  <%= t('.created_at') %>: <%= l(@page.created_at, :format => "%d.%m.%Y") %>
+  <% if @page.created_at.to_s  != @page.updated_at.to_s %>
+      <%= t( '.updated_at') %>: <%= l(@page.updated_at, :format => "%d.%m.%Y") %>
+  <% end %>
+</div>
+

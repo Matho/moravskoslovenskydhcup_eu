@@ -1,0 +1,23 @@
+<%= render "refinery/pages/left_body_content" %>
+
+<section id='middle_body_content'>
+  <div class="body">
+    <%= render "refinery/pages/middle_body_header" %>
+
+    <h1><%= @page.title %></h1>
+
+    <% cache "page_parts/#{@page.id}/middle_body_content/#{params[:locale]}" do %>
+        <%= raw content_of(@page, :middle_body)  %>
+
+        <%= render 'refinery/pages/page_images' %>
+    <% end %>
+
+    <%= render "refinery/contacts/contacts/show" %>
+    <%= render "refinery/photo_gallery/albums/show" %>
+
+  </div>
+
+  <%= render "refinery/pages/author_info" %>
+</section>
+
+<%= render "refinery/pages/right_body_content" %>

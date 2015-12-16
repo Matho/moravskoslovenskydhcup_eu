@@ -1,0 +1,36 @@
+// GENERAL
+@mixin font_with_shadow {
+  font-family: $bullet_font;
+  text: {
+    shadow: black 0px 2px 3px;
+  }
+}
+
+@mixin body_section_float_with_margin {
+  float: left;
+  margin-left:23px;
+}
+
+// SNIPPETS
+@mixin small_logo_in_snippet_header {
+  background: {
+    image: image-url('theme_2013/icons/specialized_small_logo.png');
+    repeat:no-repeat;
+    position: 180px 4px;
+  }
+}
+
+
+// FORMATING
+@mixin clearing {
+  display: block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+

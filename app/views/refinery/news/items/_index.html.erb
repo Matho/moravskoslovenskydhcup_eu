@@ -1,0 +1,36 @@
+<% cache "news/index/page/#{params[:page].to_i}/#{params[:locale]}" do %>
+    <% @items = Refinery::News::Item.paginate(:page => params[:page], :per_page=>3 ).all %>
+    <% if @items.any? %>
+        <%= will_paginate @items, {:inner_window=>2 } if params[:page].to_i > 1 %>
+
+        <% @items.each do |item| %>
+            <% cache "news/index/#{item.id}/#{params[:locale]}" do %>
+                <div class="news_item">
+
+                  <div class="left_part">
+                    <%= link_to image_fu(item.image, '140x140'), item.image.thumbnail('800x600>').url, { :class=>"fancybox", :rel=>"group" } if item.image %>
+                  </div>
+                  <div class="right_part <%= "without_image" if !item.image %>" >
+                    <h3><%= link_to_if item.contains_body?, item.title, refinery.news_item_path(item) %></h3>
+                    <p class="published_date">
+                      <%= news_date(item.publish_date) %>
+                    </p>
+
+                    <%= raw item.teaser %>
+                    <p></p>
+                  </div>
+
+                  <% if item.contains_body? %>
+                      <div class="more_info">
+                        <%= link_to t('.read_more'), refinery.news_item_path(item) %>
+                      </div>
+                  <% end  %>
+                </div>
+            <% end %>
+        <% end %>
+
+        <%= will_paginate @items, {:inner_window=>2 } %>
+    <% else %>
+        <p><em><%= t('.no_items_yet') %></em></p>
+    <% end %>
+<% end %>

@@ -1,0 +1,19 @@
+<section id='left_body_content' >
+  <% cache "page_parts/#{@page.id}/left_body_content/#{params[:locale]}" do %>
+      <%= raw content_of(@page, :left_body)  %>
+  <% end %>
+</section>
+<section id='middle_body_content'>
+  <%= render "middle_body_header" %>
+
+  <div id="news_index">
+    <%= render "refinery/news/items/index" %>
+  </div>
+  <%= link_to (image_tag "/rss.gif") + " RSS aktualít", "news.rss" %>
+
+</section>
+<section id='right_body_content'>
+  <% cache "page_parts/#{@page.id}/right_body_content/#{params[:locale]}" do %>
+      <%= raw content_of(@page, :right_body) %>
+  <% end %>
+</section>

@@ -1,0 +1,5 @@
+Kešovanie snippetov:
+
+Snippet môže byť pridaný do akejkoľvek page_partial, preto:
+- po upravach snippetov musia byt zmazane cache subory zacinajuce na snippets, a aj vsetky page_parts/
+- pri upravach pridani upravovani v jednotlivej page_part, musi byt zmazana page part daneho clanku

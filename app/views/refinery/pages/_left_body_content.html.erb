@@ -1,0 +1,18 @@
+<section id='left_body_content' >
+
+  <% cache "submenu/#{@page.root.id}/#{params[:locale]}" do %>
+    <%= render "/refinery/submenu", :locals=> {} %>
+  <% end %>
+
+  <% cache "snippets/31/#{params[:locale]}" do %>
+      <%= raw snippet_newsletter_header %>
+  <% end %>
+
+  <% cache "snippets/32/#{params[:locale]}" do %>
+      <%= raw snippet_newsletter_body %>
+  <% end %>
+
+  <% cache "page_parts/#{@page.id}/left_body_content/#{params[:locale]}" do %>
+      <%= raw content_of(@page, :left_body)  %>
+  <% end %>
+</section>

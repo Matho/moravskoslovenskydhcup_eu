@@ -1,0 +1,54 @@
+// GENERAL
+@mixin font_with_shadow {
+  font-family: $bullet_font;
+  text: {
+    shadow: black 0px 2px 3px;
+  }
+}
+
+@mixin body_section_float_with_margin {
+  float: left;
+  margin-left:23px;
+}
+
+// SNIPPETS
+@mixin small_logo_in_snippet_header {
+  background: {
+    image: image-url('theme_2013/icons/specialized_small_logo.png');
+    repeat:no-repeat;
+    position: 180px 4px;
+  }
+}
+
+
+// FORMATING
+@mixin clearing {
+  display: block;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin background_gradient {
+/* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($background_calendar_from), to($background_calendar_to));
+
+/* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, $background_calendar_from, $background_calendar_to);
+
+/* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, $background_calendar_from, $background_calendar_to);
+
+/* IE 10 */
+  background: -ms-linear-gradient(top, $background_calendar_from,$background_calendar_to);
+
+/* Opera 11.10+ */
+  background: -o-linear-gradient(top, $background_calendar_from,$background_calendar_to);
+
+}
+
+

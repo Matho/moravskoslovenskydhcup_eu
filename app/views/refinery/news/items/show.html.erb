@@ -1,0 +1,31 @@
+<section id='left_body_content' >
+  <% cache "page_parts/#{@page.id}/left_body_content/#{params[:locale]}" do %>
+      <%= raw content_of(@page, :left_body)  %>
+  <% end %>
+</section>
+<section id='middle_body_content'>
+  <%= render "refinery/pages/middle_body_header" %>
+
+  <% cache "news/show/#{@item.id}/#{params[:locale]}" do %>
+      <h1><%= @item.title %></h1>
+
+      <article >
+        <%= @item.body.html_safe %>
+        <%= render 'refinery/news/shared/news_images' %>
+      </article>
+
+      <div id="author_info" >
+        <%= t('refinery.pages.author_info.created_at') %>: <%= l(@item.created_at, :format => "%d.%m.%Y") %>
+        <% if @item.created_at.to_s  != @item.updated_at.to_s %>
+            <%= t( 'refinery.pages.author_info.updated_at') %>: <%= l(@item.updated_at, :format => "%d.%m.%Y") %>
+        <% end %>
+      </div>
+  <% end %>
+</section>
+<section id='right_body_content'>
+  <% cache "page_parts/#{@page.id}/right_body_content/#{params[:locale]}" do %>
+      <%= raw content_of(@page, :right_body) %>
+  <% end %>
+</section>
+
+

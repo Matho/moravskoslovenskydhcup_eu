@@ -1,0 +1,174 @@
+@import "variables";
+@import "mixins";
+
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+header {
+  width: 984px;
+
+  #banner {
+    width: 984px;
+    height: 209px;
+    clear:both;
+
+    a {
+      display: block;
+    }
+    .title {
+      position: relative;
+      top: -242px;
+      left:10px;
+      z-index: 3;
+    }
+    .logo {
+      position: relative;
+      top: -205px;
+      left: 770px;
+      z-index: 4;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 42px;
+}
+
+#page_container {
+  text-align: left;
+  width: $page_width;
+  margin: 0 auto;
+}
+
+#page_padding {
+  padding: {
+    left: $page_left_margin;
+    right: $page_right_margin;
+  }
+}
+
+#page {
+  margin-top: 10px;
+  width: $page_inner_width;
+  min-height: $page_min_height;
+  overflow: hidden;
+}
+
+
+#left_body_content {
+  float: left;
+  width: 200px;
+  min-height: $page_min_height;
+}
+
+
+#middle_body_content {
+  width: 568px;
+  .body {
+    min-height: $page_min_height;
+  }
+  .news_item {
+    .left_part {
+      float:left;
+      width:160px;
+      img {
+        margin: 20px 10px 0 10px;
+      }
+    }
+    .right_part {
+      float:left;
+      width: 408px;
+    }
+    .right_part.without_image {
+      width: 568px;
+    }
+    .more_info {
+      clear:both;
+      float: right;
+      padding: 3px;
+    }
+  }
+  @include body_section_float_with_margin;
+}
+
+#middle_body_content_without_right {
+  width: 761px;
+  .body {
+    min-height: $page_min_height;
+  }
+  @include body_section_float_with_margin;
+}
+
+
+#right_body_content {
+  width: 170px;
+  min-height: $page_min_height;
+  @include body_section_float_with_margin;
+
+}
+
+
+
+
+.snippet {
+  margin-bottom: 15px;
+  &.no_margin {
+    margin-bottom: 0;
+  }
+  .header {
+    min-height: 27px;
+    .right_text {
+      float:right;
+      display: inline;
+    }
+  }
+}
+
+
+#menu {
+  margin-top: 10px;
+
+  ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+    li {
+      float: left;
+      width: 122px;
+      list-style: none;
+      padding: 0 0 0 0px;
+
+      a {
+        display: block;
+      }
+    }
+  }
+  @include clearing;
+}
+
+#submenu, .submenu {
+  ul:first-child {
+    padding: {
+      top: 15px;
+      left: 20px;
+      bottom: 15px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+
+    li {
+      a {
+        display:block;
+      }
+    }
+  }
+
+}

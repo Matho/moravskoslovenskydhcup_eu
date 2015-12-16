@@ -1,0 +1,26 @@
+<%#TODO DRY %>
+<%= render "refinery/race_registrations/left_body_content" %>
+
+
+<section id='middle_body_content_without_right'>
+  <div class="body">
+    <%= render "refinery/pages/middle_body_header" %>
+
+    <%= raw @page[:middle_body] %>
+    <% if @registrations.present? %>
+        <%= render "form" %>
+    <% else %>
+        <p><%= t('.no_registration') %></p>
+    <% end %>
+
+  </div>
+  <%= render "refinery/pages/author_info" %>
+</section>
+
+
+
+
+
+
+
+

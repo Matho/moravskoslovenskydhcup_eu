@@ -1,0 +1,29 @@
+<% cache "banners/page/#{@page.id}" do  %>
+ <div id="banner">
+  <% if (banner = @page.banners.published.last)
+     else
+       # if not found, find nearest ancestor's baner
+       ancestor_page = Refinery::Page.joins(:banners).where(:id => @page.ancestors.map{|page| page.id } ).order('depth DESC').first
+       banner = ancestor_page.banners.published.first if ancestor_page
+     end %>
+
+  <% if banner %>
+      <%= link_to image_fu(banner.image, '984x209#c'), refinery.root_path  %>
+      <%#TODO ako snippet %>
+      <%= image_tag('theme_2015/logo_2015.png', {:class=> "logo"}) %>
+
+      <div class="title">
+        <%= raw banner.title %>
+      </div>
+  <% end %>
+</div>
+<% end %>
+
+
+<% cache "main_navigation_#{params[:locale]}" do %>
+    <%= render(:partial => "/refinery/menu", :locals => {
+            :dom_id => 'menu',
+            :css => 'menu',
+            :hide_children => true
+    }) %>
+<% end %>

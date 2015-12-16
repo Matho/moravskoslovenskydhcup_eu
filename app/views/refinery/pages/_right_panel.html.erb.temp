@@ -1,0 +1,51 @@
+<div class="snippet">
+    <div class="header">Organizátori</div>
+    <div class="body">
+      <%= link_to image_tag("reklama/ctmbikeparkkalnica.jpg"), "http://www.ctm.sk",                { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/bikeparkkalnica.jpg" ),   "http://www.bikecentrumkalnica.sk", { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/sk-grafobal.jpg"),        "http://www.dhteam-grafobal.cz/",   { :target=> "_blank"}  %>
+    </div>
+  </div>
+
+  <div class="snippet">
+    <div class="header">Partneri</div>
+    <div class="body partners">
+      <%= link_to image_tag("reklama/Muc-Off-logo.png"), "http://www.elitebikes.sk/muc-off/", { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/elitebikes.png" ),  "http://www.elitebikes.sk",          { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/vans.png"),         "http://www.vans.com/",              { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/meatfly.png"),      "http://www.meatfly.cz/",            { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/kali.png"),         "http://www.kaliprotectives.com/",   { :target=> "_blank"}  %>
+    </div>
+  </div>
+
+  <div class="snippet">
+    <div class="header">Hlavní mediálni partneri</div>
+    <div class="body partners">
+      <%= link_to image_tag("reklama/bikemagazin.jpg"),  "http://www.bikemagazin.sk",       { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/dolekop.com.jpg" ), "http://www.dolekop.com",          { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/biker.jpg"),        "http://www.biker.sk",             { :target=> "_blank"}  %>
+    </div>
+  </div>
+
+  <div class="snippet">
+    <div class="header">Mediálni partneri</div>
+    <div class="body partners">
+      <%= link_to image_tag("reklama/qq.png"),             "http://www.qq.sk",             { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/cyklomania.jpg" ),    "http://www.cyklomania.sk/",    { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/speedsport.png"),     "http://www.speedsport.sk",     { :target=> "_blank"}  %>
+      <%= link_to image_tag("reklama/regionvalassko.jpg"), "http://www.regionvalassko.cz", { :target=> "_blank"}  %>
+    </div>
+  </div>
+
+  <div class="snippet">
+    <div class="header">Návštevnosť</div>
+    <div class="body text-align-center" style="font-size: 10px;">
+      <script language="JavaScript" type="text/javascript">
+          <!--
+          document.write ('<img src="http://toplist.sk/count.asp?id=1214608&logo=mc&http='+escape(document.referrer)+'&wi='+escape(window.screen.width)+'&he='+escape(window.screen.height)+'&cd='+escape(window.screen.colorDepth)+'&t='+escape(document.title)+'" width="88" height="60" border=0 alt="TOPlist" />');
+          //-->
+      </script>
+      <br/>
+      Návštevnosť od 29.3.2010
+    </div>
+  </div>

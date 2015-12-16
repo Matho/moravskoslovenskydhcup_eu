@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+<% site_bar = render('/refinery/site_bar', :head => true) -%>
+<%= render '/refinery/head' %>
+<body>
+<%= site_bar -%>
+<%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+
+<div class="site_name_bar header" style="text-align:center;">
+  <% cache "snippets/30/#{params[:locale]}" do %>
+      <%= site_name %>
+  <% end %>
+</div>
+
+<div id="page_container">
+  <div id="page_padding">
+    <header id="header">
+      <%= render '/refinery/header' -%>
+    </header>
+    <section id="page">
+      <%= yield %>
+    </section>
+  </div>
+  <footer>
+    <%= render '/refinery/footer' -%>
+  </footer>
+</div>
+<%= render '/refinery/javascripts' %>
+</body>
+</html>

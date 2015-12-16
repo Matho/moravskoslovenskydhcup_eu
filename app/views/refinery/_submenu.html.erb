@@ -1,0 +1,13 @@
+<div class="snippet">
+  <div class="header icon"><%= @page.root.title %></div>
+  <div class="body no_padding">
+
+    <%= render :partial => '/refinery/menu',
+               :locals => {
+                       :dom_id => 'submenu',
+                       :roots => refinery_menu_pages.select{|p| p.parent_id == @page.root.id}
+               } %>
+
+
+  </div>
+</div>

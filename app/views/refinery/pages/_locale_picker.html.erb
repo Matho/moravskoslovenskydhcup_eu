@@ -1,0 +1,11 @@
+<% if (locales ||= Refinery::I18n.frontend_locales).present? and locales.many? %>
+    <ul id='switch_locale_picker' class="clearfix">
+      <% locales.each do |locale| %>
+          <li<%= " class='selected'".html_safe if locale.to_s == params[:locale].to_s %>>
+            <%= link_to image_tag("theme_2012/icons/languages/#{locale}.jpg", :width => "23", :height => "17"),
+                        refinery.url_for(:locale => locale) %>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
+

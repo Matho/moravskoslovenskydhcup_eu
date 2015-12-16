@@ -1,0 +1,27 @@
+// DIMENSIONS
+$page_width:       1008px;
+$page_left_margin:   12px;
+$page_right_margin:  12px;
+$page_inner_width: $page_width - $page_left_margin - $page_right_margin;
+$page_min_height: 400px;
+
+
+// FONTS
+$bullet_font: "Bullet Regular", "Arial";
+$submenu_font_family: Verdana, Times, Arial;
+$page_font: Verdana, Times, Arial;
+
+// BORDERS
+$snippet_border: 1px solid #2c3043;
+
+// COLORS
+$dark_green: #117d00;
+$page_bg_color: white;
+$middle_body_header_color: #747474;
+$submenu_hover_bg_color: #16293c;
+$snippet_bg_color: #f2f2f2;
+$background_color: #fff001;  /*#e5de34 - hnusna zlta 2012; #f0e81a  - 2011; #2c3049 - 2010*/
+$separator_color: #CCC;
+$h_color_a: #50060c;
+$a_color: #474646;
+$table_border_color: #808080;

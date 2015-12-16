@@ -1,0 +1,386 @@
+GIT
+  remote: git://github.com/Matho/refinerycms-imajax.git
+  revision: 69a5458d8d7a70c619d8f340dba6d700a7199d84
+  branch: 2-0-stable
+  specs:
+    refinerycms-imajax (2.0.0)
+      refinerycms-core (~> 2.0.0)
+
+GIT
+  remote: git://github.com/Matho/refinerycms-mailchimp.git
+  revision: 9667baf483af6e9e4521ec002e6272d25e304caf
+  branch: refinery-2.0
+  specs:
+    refinerycms-mailchimp (0.1.0)
+      hominid (~> 3.0)
+      refinerycms-core (~> 2.0.8)
+      refinerycms-settings (~> 2.0.1)
+
+GIT
+  remote: git://github.com/Matho/refinerycms-news.git
+  revision: 08cd772e16222f48c22a5dfc7ebba45323fdcd59
+  branch: 2-0-stable
+  specs:
+    refinerycms-news (2.0.1)
+      friendly_id (~> 4.0.1)
+      refinerycms-core (~> 2.0.1)
+      refinerycms-settings (~> 2.0.0)
+
+GIT
+  remote: git://github.com/Matho/refinerycms-pc_banners.git
+  revision: da7ff14ea9841f5eb90c38779c56e72381a943d5
+  branch: master
+  specs:
+    refinerycms-pc_banners (2.0.1)
+      refinerycms-core (~> 2.0.1)
+
+GIT
+  remote: git://github.com/Matho/refinerycms-registrations.git
+  revision: 2732a6e77881ee3837e9eab250acf931d4ac5be8
+  ref: 2732a6e77
+  branch: master
+  specs:
+    refinerycms-registrations (0.1.2)
+      humanizer
+      refinerycms-core (~> 2.0.8)
+
+GIT
+  remote: git://github.com/Matho/refinerycms-snippets.git
+  revision: ff3267e5987fcb3714c0aa2ddcad9908d6e2d204
+  branch: rails-3-1
+  specs:
+    refinerycms-snippets (2.0.0)
+      refinerycms-pages (~> 2.0.0)
+
+GIT
+  remote: git://github.com/Matho/refinerycms-videojs.git
+  revision: ea65e0fa00f4e15efafa6704d683cbe00d634eb7
+  specs:
+    refinerycms-videojs (0.5.5.1)
+      dragonfly
+      rack-cache
+      refinerycms-core
+
+GIT
+  remote: git://github.com/refinery/refinerycms-page-images.git
+  revision: b099ac0564be24f1d0e280731d46b2f8a2fec17a
+  branch: 2-0-stable
+  specs:
+    refinerycms-page-images (2.0.1)
+      refinerycms-pages (~> 2.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (3.2.12)
+      actionpack (= 3.2.12)
+      mail (~> 2.4.4)
+    actionpack (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+      erubis (~> 2.7.0)
+      journey (~> 1.0.4)
+      rack (~> 1.4.5)
+      rack-cache (~> 1.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.2.1)
+    activemodel (3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+    activerecord (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      arel (~> 3.0.2)
+      tzinfo (~> 0.3.29)
+    activeresource (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+    activesupport (3.2.12)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    acts_as_indexed (0.7.8)
+    addressable (2.3.2)
+    arel (3.0.2)
+    awesome_nested_set (2.1.6)
+      activerecord (>= 3.0.0)
+    babosa (0.3.9)
+    bcrypt-ruby (3.0.1)
+    builder (3.0.4)
+    bullet (4.2.0)
+      uniform_notifier
+    capistrano (2.13.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    capybara (1.1.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (~> 2.0)
+      xpath (~> 0.1.4)
+    carrierwave (0.6.2)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
+    client_side_validations (3.2.1)
+    coffee-rails (3.2.2)
+      coffee-script (>= 2.2.0)
+      railties (~> 3.2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.2)
+    daemons (1.0.10)
+    database_cleaner (0.7.2)
+    devise (2.0.5)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      railties (~> 3.1)
+      warden (~> 1.1.1)
+    diff-lcs (1.2.1)
+    dragonfly (0.9.14)
+      multi_json (~> 1.0)
+      rack
+    erubis (2.7.0)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    factory_girl (2.6.4)
+      activesupport (>= 2.3.9)
+    factory_girl_rails (1.7.0)
+      factory_girl (~> 2.6.0)
+      railties (>= 3.0.0)
+    ffi (1.5.0)
+    friendly_id (4.0.9)
+    gem_plugin (0.2.3)
+    globalize3 (0.3.0)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      paper_trail (~> 2)
+    highline (1.6.15)
+    hike (1.2.1)
+    hominid (3.0.5)
+    humanizer (2.6.0)
+    i18n (0.6.4)
+    journey (1.0.4)
+    jquery-rails (2.0.3)
+      railties (>= 3.1.0, < 5.0)
+      thor (~> 0.14)
+    json (1.7.7)
+    launchy (2.1.2)
+      addressable (~> 2.3)
+    letter_opener (1.0.0)
+      launchy (>= 2.0.4)
+    libv8 (3.11.8.4)
+    mail (2.4.4)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.21)
+    mini_exiftool (1.6.0)
+    mini_magick (3.5.0)
+      subexec (~> 0.2.1)
+    mongrel (1.2.0.pre2)
+      daemons (~> 1.0.10)
+      gem_plugin (~> 0.2.3)
+    multi_json (1.7.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.6.2)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
+    nokogiri (1.5.8)
+    orm_adapter (0.0.7)
+    paper_trail (2.7.1)
+      activerecord (~> 3.0)
+      railties (~> 3.0)
+    pg (0.14.1)
+    polyglot (0.3.3)
+    quiet_assets (1.0.1)
+      railties (~> 3.1)
+    rack (1.4.5)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-ssl (1.3.3)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rails (3.2.12)
+      actionmailer (= 3.2.12)
+      actionpack (= 3.2.12)
+      activerecord (= 3.2.12)
+      activeresource (= 3.2.12)
+      activesupport (= 3.2.12)
+      bundler (~> 1.0)
+      railties (= 3.2.12)
+    railties (3.2.12)
+      actionpack (= 3.2.12)
+      activesupport (= 3.2.12)
+      rack-ssl (~> 1.3.2)
+      rake (>= 0.8.7)
+      rdoc (~> 3.4)
+      thor (>= 0.14.6, < 2.0)
+    rake (10.0.3)
+    rdoc (3.12.2)
+      json (~> 1.4)
+    recaptcha (0.3.4)
+    ref (1.0.2)
+    refinerycms (2.0.10)
+      bundler (~> 1.0)
+      refinerycms-authentication (= 2.0.10)
+      refinerycms-core (= 2.0.10)
+      refinerycms-dashboard (= 2.0.10)
+      refinerycms-images (= 2.0.10)
+      refinerycms-pages (= 2.0.10)
+      refinerycms-resources (= 2.0.10)
+    refinerycms-authentication (2.0.10)
+      devise (~> 2.0.5)
+      orm_adapter (~> 0.0.7)
+      refinerycms-core (= 2.0.10)
+    refinerycms-codemirror (0.1.6)
+      refinerycms-core
+    refinerycms-contacts (0.1.2)
+      recaptcha
+      refinerycms-core (~> 2.0.9)
+    refinerycms-core (2.0.10)
+      acts_as_indexed (~> 0.7.7)
+      awesome_nested_set (~> 2.1.3)
+      coffee-rails (~> 3.2.1)
+      friendly_id (~> 4.0.9)
+      globalize3 (~> 0.3.0)
+      jquery-rails (~> 2.0.0)
+      rails (>= 3.1.11, < 3.3, != 3.2.9, != 3.2.8, != 3.2.7, != 3.2.6, != 3.2.5, != 3.2.4, != 3.2.3, != 3.2.2, != 3.2.11, != 3.2.10, != 3.2.1, != 3.2.0)
+      sass-rails (~> 3.2.3)
+      truncate_html (~> 0.5.5)
+      uglifier (>= 1.0.3)
+      will_paginate (~> 3.0.2)
+    refinerycms-dashboard (2.0.10)
+      refinerycms-core (= 2.0.10)
+    refinerycms-i18n (2.0.2)
+      refinerycms-core (~> 2.0.0)
+      routing-filter (>= 0.2.3)
+    refinerycms-images (2.0.10)
+      dragonfly (~> 0.9.8)
+      rack-cache (>= 0.5.3)
+      refinerycms-core (= 2.0.10)
+    refinerycms-pages (2.0.10)
+      awesome_nested_set (~> 2.1.3)
+      babosa (!= 0.3.6)
+      refinerycms-core (= 2.0.10)
+      seo_meta (~> 1.3.0)
+    refinerycms-photo-gallery (0.1.2)
+      carrierwave (= 0.6.2)
+      mime-types
+      mini_exiftool
+      mini_magick
+      refinerycms-core (~> 2.0.3)
+      refinerycms-settings (~> 2.0.1)
+    refinerycms-resources (2.0.10)
+      dragonfly (~> 0.9.8)
+      rack-cache (>= 0.5.3)
+      refinerycms-core (= 2.0.10)
+    refinerycms-settings (2.0.2)
+      refinerycms-core (~> 2.0.1)
+    refinerycms-testing (2.0.10)
+      capybara (~> 1.1.2)
+      database_cleaner (~> 0.7.2)
+      factory_girl_rails (~> 1.7.0)
+      refinerycms-core (= 2.0.10)
+      rspec-rails (~> 2.11)
+    routing-filter (0.3.1)
+      actionpack
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.0)
+    rspec-rails (2.13.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rubyzip (0.9.9)
+    rvm-capistrano (1.2.7)
+      capistrano (>= 2.0.0)
+    sass (3.2.7)
+    sass-rails (3.2.6)
+      railties (~> 3.2.0)
+      sass (>= 3.1.10)
+      tilt (~> 1.3)
+    selenium-webdriver (2.31.0)
+      childprocess (>= 0.2.5)
+      multi_json (~> 1.0)
+      rubyzip
+      websocket (~> 1.0.4)
+    seo_meta (1.3.0)
+      railties (>= 3.0.0)
+    sprockets (2.2.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.6)
+    subexec (0.2.2)
+    therubyracer (0.11.0)
+      ref
+    thor (0.17.0)
+    tilt (1.3.6)
+    treetop (1.4.12)
+      polyglot
+      polyglot (>= 0.3.1)
+    truncate_html (0.5.5)
+    tzinfo (0.3.37)
+    uglifier (1.3.0)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+    uniform_notifier (1.1.0)
+    warden (1.1.1)
+      rack (>= 1.0)
+    websocket (1.0.7)
+    will_paginate (3.0.4)
+    xpath (0.1.4)
+      nokogiri (~> 1.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bullet
+  capistrano
+  client_side_validations (~> 3.2.1)
+  coffee-rails (~> 3.2.1)
+  execjs
+  jquery-rails (~> 2.0.0)
+  json (>= 1.7.7)
+  letter_opener
+  libv8
+  mongrel (>= 1.2.0.pre2)
+  pg
+  quiet_assets
+  rails (= 3.2.12)
+  refinerycms (~> 2.0.10)
+  refinerycms-codemirror (~> 0.1.6)
+  refinerycms-contacts (~> 0.1.2)
+  refinerycms-i18n (~> 2.0.0)
+  refinerycms-imajax (~> 2.0.0)!
+  refinerycms-mailchimp!
+  refinerycms-news!
+  refinerycms-page-images (~> 2.0.0)!
+  refinerycms-pc_banners (~> 2.0.1)!
+  refinerycms-photo-gallery (= 0.1.2)
+  refinerycms-registrations!
+  refinerycms-snippets (~> 2.0.0)!
+  refinerycms-testing
+  refinerycms-videojs!
+  rvm-capistrano
+  sass-rails (~> 3.2.3)
+  sqlite3
+  therubyracer
+  uglifier (>= 1.0.3)

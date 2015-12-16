@@ -1,0 +1,13 @@
+<section id='right_body_content'>
+
+  <% cache "page_parts/#{@page.id}/right_body_content/#{params[:locale]}" do %>
+      <%# If there is not associated page part, show default page part %>
+      <% if content_of(@page, :right_body).blank? %>
+          <% cache "page_parts/1/right_body_content/#{params[:locale]}" do %>
+              <%= raw load_default_right_page_part %>
+          <% end %>
+      <% else %>
+          <%= raw content_of(@page, :right_body) %>
+      <% end %>
+  <% end %>
+</section>

@@ -1,0 +1,8 @@
+sk:
+  refinery:
+    pages:
+      author_info:
+        created_at: Vytvorené
+        updated_at: Aktualizované
+  will_paginate:
+    page_gap: "..."
